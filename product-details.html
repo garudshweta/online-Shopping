@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Printed T-Shirt - RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"><img src="logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<!-- Single Product Details -->
+<div class="small-container">
+    <div class="row">
+        <div class="col-2">
+            <img src="product-1.jpg" id="ProductImg" width="100%">
+            <!-- Thumbnail images (reuse same for demo, add more if images exist) -->
+            <div class="small-img-group">
+                <div class="small-img">
+                    <img src="product-1.jpg" width="100%" class="small-img-item" onclick="changeImage(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="product-1.jpg" width="100%" class="small-img-item" onclick="changeImage(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="product-1.jpg" width="100%" class="small-img-item" onclick="changeImage(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="product-1.jpg" width="100%" class="small-img-item" onclick="changeImage(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <span>(4.0 / 5.0 - 12 reviews)</span>
+            </div>
+            <p>$50.00</p>
+
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+
+            <select>
+                <option>Select Color</option>
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+                <option>Black</option>
+            </select>
+
+            <input type="number" value="1" min="1">
+            <a href="cart.html" class="btn">Add to Cart</a>
+
+            <h4>Product Details</h4>
+            <ul>
+                <li>100% Cotton</li>
+                <li>Printed Design</li>
+                <li>Comfort Fit</li>
+                <li>Machine Washable</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Product Highlights -->
+<div class="small-container">
+    <div class="row">
+        <div class="col-2">
+            <img src="product-1.jpg" class="offer-img">
+        </div>
+        <div class="col-2">
+            <h2 class="title">Highlights</h2>
+            <ul>
+                <li>Vibrant red color with unique anime print</li>
+                <li>Premium cotton fabric for all-day comfort</li>
+                <li>Perfect fit for casual wear</li>
+                <li>Available in multiple sizes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Reviews Section -->
+<div class="small-container">
+    <h2 class="title">Customer Reviews</h2>
+    <div class="row">
+        <div class="col-3">
+            <i class="fa fa-user"></i>
+            <p>John Doe</p>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <p>Amazing quality! Love the print.</p>
+        </div>
+        <div class="col-3">
+            <i class="fa fa-user"></i>
+            <p>Jane Smith</p>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+            </div>
+            <p>Great fit, true to size.</p>
+        </div>
+        <div class="col-3">
+            <i class="fa fa-user"></i>
+            <p>Mike Johnson</p>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            </div>
+            <p>Comfortable and stylish!</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer (exact copy) -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iOS mobile phones.</p>
+                <div class="app-logo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2026 RedStore. Made with ❤️</p>
+    </div>
+</div>
+
+<!-- JS for Menu Toggle and Image Gallery -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    function changeImage(src) {
+        document.getElementById('ProductImg').src = src;
+    }
+</script>
+
+</body>
+</html>
